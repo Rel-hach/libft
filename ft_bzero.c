@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rel-hach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rel-hach <rel-hach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 15:27:14 by rel-hach          #+#    #+#             */
-/*   Updated: 2021/11/10 16:13:12 by rel-hach         ###   ########.fr       */
+/*   Updated: 2022/11/16 20:43:03 by rel-hach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,8 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 	char	*str;
 
-	i = 0;
+	i = -1;
 	str = (char *)s;
-	while (i < n)
-	{
+	while (++i < n)
 		str[i] = '\0';
-		i++;
-	}
 }
